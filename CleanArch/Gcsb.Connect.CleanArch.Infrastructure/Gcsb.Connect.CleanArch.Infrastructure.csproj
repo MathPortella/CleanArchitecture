@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Gcsb.Connect.CleanArch.Application\Gcsb.Connect.CleanArch.Application.csproj" />
+  </ItemGroup>
+
 </Project>
