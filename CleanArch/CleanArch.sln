@@ -18,7 +18,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionIt
 		nuget.config = nuget.config
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gcsb.Connect.CleanArch.WebAPI", "Gcsb.Connect.CleanArch.WebAPI\Gcsb.Connect.CleanArch.WebAPI.csproj", "{5E2E8FC2-4B51-4EEF-9C7F-EE7AF28C0445}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gcsb.Connect.CleanArch.WebAPI", "Gcsb.Connect.CleanArch.WebAPI\Gcsb.Connect.CleanArch.WebAPI.csproj", "{D78FA4BE-2A1C-41CE-80AF-0E6CD1A8A2F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,10 +42,10 @@ Global
 		{0BAFA15F-A368-4B38-9101-86DC5D7D28DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BAFA15F-A368-4B38-9101-86DC5D7D28DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BAFA15F-A368-4B38-9101-86DC5D7D28DF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5E2E8FC2-4B51-4EEF-9C7F-EE7AF28C0445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5E2E8FC2-4B51-4EEF-9C7F-EE7AF28C0445}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5E2E8FC2-4B51-4EEF-9C7F-EE7AF28C0445}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5E2E8FC2-4B51-4EEF-9C7F-EE7AF28C0445}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D78FA4BE-2A1C-41CE-80AF-0E6CD1A8A2F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D78FA4BE-2A1C-41CE-80AF-0E6CD1A8A2F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D78FA4BE-2A1C-41CE-80AF-0E6CD1A8A2F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D78FA4BE-2A1C-41CE-80AF-0E6CD1A8A2F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

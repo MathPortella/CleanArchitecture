@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -8,8 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+	<PackageReference Include="Autofac" Version="4.9.4" />
+	<PackageReference Include="FluentAssertions" Version="5.9.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
     <PackageReference Include="xunit" Version="2.4.1" />
+	<PackageReference Include="xunit.frameworks.autofac" Version="0.1.0" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
@@ -18,6 +21,19 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gcsb.Connect.CleanArch.Application\Gcsb.Connect.CleanArch.Application.csproj" />
+    <ProjectReference Include="..\Gcsb.Connect.CleanArch.Infrastructure\Gcsb.Connect.CleanArch.Infrastructure.csproj" />
+    <ProjectReference Include="..\Gcsb.Connect.CleanArch.WebAPI\Gcsb.Connect.CleanArch.WebAPI.csproj" />
+    <ProjectReference Include="..\Gcsb.Connect.ClearArch.Domain\Gcsb.Connect.ClearArch.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Builders\" />
+    <Folder Include="Cases\" />
+    <Folder Include="Mocks\" />
   </ItemGroup>
 
 </Project>
