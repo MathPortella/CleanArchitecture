@@ -12,8 +12,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Gcsb.Connect.CleanArch.Application\Gcsb.Connect.CleanArch.Application.csproj" />
+    <ProjectReference Include="..\Gcsb.Connect.CleanArch.Domain\Gcsb.Connect.CleanArch.Domain.csproj" />
     <ProjectReference Include="..\Gcsb.Connect.CleanArch.Infrastructure\Gcsb.Connect.CleanArch.Infrastructure.csproj" />
-    <ProjectReference Include="..\Gcsb.Connect.ClearArch.Domain\Gcsb.Connect.ClearArch.Domain.csproj" />
   </ItemGroup>
 
 </Project>

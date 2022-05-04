@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Gcsb.Connect.ClearArch.Domain\Gcsb.Connect.ClearArch.Domain.csproj" />
+    <ProjectReference Include="..\Gcsb.Connect.CleanArch.Domain\Gcsb.Connect.CleanArch.Domain.csproj" />
   </ItemGroup>
 
 </Project>
