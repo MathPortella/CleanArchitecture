@@ -32,11 +32,4 @@
 		<PackageReference Include="TinyCsvParser" Version="2.6.0" />
 	</ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Database\Entities\" />
-    <Folder Include="Database\Map\" />
-    <Folder Include="Database\Migrations\" />
-    <Folder Include="Database\Repositories\" />
-  </ItemGroup>
-
 </Project>
