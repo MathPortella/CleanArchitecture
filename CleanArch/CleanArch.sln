@@ -18,7 +18,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionIt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gcsb.Connect.CleanArch.WebAPI", "Gcsb.Connect.CleanArch.WebAPI\Gcsb.Connect.CleanArch.WebAPI.csproj", "{D78FA4BE-2A1C-41CE-80AF-0E6CD1A8A2F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gcsb.Connect.CleanArch.Domain", "Gcsb.Connect.CleanArch.Domain\Gcsb.Connect.CleanArch.Domain.csproj", "{08D08E35-1E2F-4CD5-A7A3-335A63A8788E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gcsb.Connect.CleanArch.Domain", "Gcsb.Connect.CleanArch.Domain\Gcsb.Connect.CleanArch.Domain.csproj", "{08D08E35-1E2F-4CD5-A7A3-335A63A8788E}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{B4E86C17-2375-42AB-9957-3EF7DCF435A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -46,6 +48,10 @@ Global
 		{08D08E35-1E2F-4CD5-A7A3-335A63A8788E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08D08E35-1E2F-4CD5-A7A3-335A63A8788E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08D08E35-1E2F-4CD5-A7A3-335A63A8788E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4E86C17-2375-42AB-9957-3EF7DCF435A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4E86C17-2375-42AB-9957-3EF7DCF435A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4E86C17-2375-42AB-9957-3EF7DCF435A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4E86C17-2375-42AB-9957-3EF7DCF435A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
