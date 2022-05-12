@@ -1,4 +1,4 @@
-﻿using FluentValidation;
+﻿ using FluentValidation;
 using FluentValidation.Results;
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
