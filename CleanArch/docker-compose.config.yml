@@ -1,0 +1,33 @@
+version: '3.7'
+
+services:
+  gcsb.connect.cleanarch.webapi:
+    image: acrvivo.azurecr.io/gcsbconnectcleanarchwebapi
+    environment: 
+      ALLOWED_HOSTS: {ALLOWED_HOSTS}
+      JWT_KEY: {JWT_KEY}
+      DBCONN: {DBCONN}
+      POSTGRES_LOG_CONN: {POSTGRES_LOG_CONN}
+    networks: 
+      - gcsb-connect-cleanarch-network
+    deploy:      
+      replicas: 1
+      placement: 
+        constraints:
+          - node.labels.web == true
+      update_config:
+        order: start-first      
+      labels:
+        - "traefik.http.routers.cleanarch.rule=PathPrefix(`/cleanarch`)"
+        - "traefik.http.routers.cleanarch.service=cleanarch" # <-----
+        - "traefik.http.routers.cleanarch.middlewares=cleanarchMid" # <-----
+        - "traefik.http.services.cleanarch.loadbalancer.server.port=80"
+        - "traefik.http.middlewares.cleanarchMid.stripprefix.prefixes=/cleanarch"
+        - "traefik.docker.lbswarm=true"
+        - "traefik.enable=true"
+        - "traefik.port=80"
+
+networks: 
+  gcsb-connect-cleanarch-network:
+    name: public
+    external: true

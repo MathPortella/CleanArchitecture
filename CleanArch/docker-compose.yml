@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  gcsb.connect.cleanarch.webapi:
+    image: ${DOCKER_REGISTRY-}gcsbconnectcleanarchwebapi
+    build:
+      context: .
+      dockerfile: Gcsb.Connect.CleanArch.WebAPI/Dockerfile
+    networks: 
+      - gcsb-connect-cleanarch-network
+
+networks: 
+  gcsb-connect-cleanarch-network:
