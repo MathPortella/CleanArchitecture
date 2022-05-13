@@ -11,14 +11,13 @@ namespace Gcsb.Connect.CleanArch.Domain.Entities
     {
         public string Name { get; private set; }
         public string BirthDate { get; private set; }
-        public string Rg { get; private set; }
-        public string Cpf { get; private set; }
+        public int Rg { get; private set; }
+        public int Cpf { get; private set; }
         public string Address { get; private set; }
-        public int PostalCode { get; private set; }
         public DateTime RegistrationDate { get; private set; }
-        public bool IsActive { get; private set; }
+        public bool ClientActive { get; private set; }
 
-        public Customer(string name, string birthDate, string rg, string cpf, string address, int postalCode)
+        public Customer(string name, string birthDate, int rg, int cpf, string address) //adicionar
         {
             Id = Guid.NewGuid();
             Name = name;
@@ -26,9 +25,22 @@ namespace Gcsb.Connect.CleanArch.Domain.Entities
             Rg = rg;
             Cpf = cpf;
             Address = address;
-            PostalCode = postalCode;
             RegistrationDate = DateTime.UtcNow;
-            IsActive = true;
+            ClientActive = true;
+
+            Validate(this, new CustomerValidator());
+        }
+
+        public Customer(Guid id, string name, string birthDate, int rg, int cpf, string address) //editar através do ID
+        {
+            Id = id;
+            Name = name;
+            BirthDate = birthDate;
+            Rg = rg;
+            Cpf = cpf;
+            Address = address;
+            RegistrationDate = DateTime.UtcNow;
+            ClientActive = true;
 
             Validate(this, new CustomerValidator());
         }

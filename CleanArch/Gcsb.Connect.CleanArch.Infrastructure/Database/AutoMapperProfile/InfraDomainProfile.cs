@@ -1,12 +1,14 @@
 ﻿using AutoMapper;
+using Gcsb.Connect.CleanArch.Domain.Entities;
+using Gcsb.Connect.CleanArch.Infrastructure.Database.Entities;
 
-namespace DemoCleanArchitecture.Infrastructure.PostgresDataAccess.AutoMapperProfile
+namespace Gcsb.Connect.CleanArch.Infrastructure.Database.AutoMapperProfile
 {
     public class InfraDomainProfile : Profile
     {
         public InfraDomainProfile()
         {
-            //CreateMap<Entities.Customer.Customer, Domain.Customer.Customer>().ReverseMap();
+            CreateMap<Customer, CustomerInfra>().ReverseMap();
         }
     }
 }

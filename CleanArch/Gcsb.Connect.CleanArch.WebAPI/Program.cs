@@ -1,4 +1,5 @@
 using Autofac.Extensions.DependencyInjection;
+using Gcsb.Connect.CleanArch.WebAPI;
 using Gcsb.Connect.Pkg.Serilog.Implementation;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;

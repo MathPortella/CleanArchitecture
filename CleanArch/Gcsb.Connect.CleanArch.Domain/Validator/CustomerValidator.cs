@@ -15,10 +15,7 @@ namespace Gcsb.Connect.CleanArch.Domain.Validator
             RuleFor(r => r.Id).NotEmpty().NotEqual(new Guid());
             RuleFor(r => r.Name).NotEmpty().NotNull().MaximumLength(50);
             RuleFor(r => r.BirthDate).NotEmpty().NotNull().MaximumLength(10);
-            RuleFor(r => r.Rg).NotEmpty().NotNull().MaximumLength(12);
-            RuleFor(r => r.Cpf).NotEmpty().NotNull().MaximumLength(11);
             RuleFor(r => r.Address).NotEmpty().NotNull().MaximumLength(100);
-            RuleFor(r => r.PostalCode).NotEmpty().NotNull();
         }
     }
 }
