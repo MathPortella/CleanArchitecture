@@ -9,8 +9,6 @@ namespace Gcsb.Connect.CleanArch.Domain
     {
         public Guid Id { get; set; }
 
-        public Guid ID => throw new NotImplementedException();
-
         [NotMapped]
         public bool IsValid { get; private set; }
 

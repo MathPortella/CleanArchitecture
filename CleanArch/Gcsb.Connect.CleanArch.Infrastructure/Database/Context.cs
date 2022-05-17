@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using FluentValidation.Results;
+using Gcsb.Connect.CleanArch.Infrastructure.Database.Entities;
+using Gcsb.Connect.CleanArch.Infrastructure.Database.Map;
 using Microsoft.EntityFrameworkCore;
 
 namespace Gcsb.Connect.CleanArch.Infrastructure.Database
 {
     public class Context : DbContext
     {
-        //public DbSet<Customer> Customers { get; set; }
+        public DbSet<CustomerInfra> Customers { get; set; }
        
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -28,9 +31,9 @@ namespace Gcsb.Connect.CleanArch.Infrastructure.Database
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            //modelBuilder.Ignore<ValidationResult>();
+            modelBuilder.Ignore<ValidationResult>();
 
-            //modelBuilder.ApplyConfiguration(new CustomerMap());
+            modelBuilder.ApplyConfiguration(new CustomerMap());
             
             base.OnModelCreating(modelBuilder);
         }
