@@ -31,8 +31,4 @@
     <ProjectReference Include="..\Gcsb.Connect.CleanArch.Infrastructure\Gcsb.Connect.CleanArch.Infrastructure.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="UseCases\" />
-  </ItemGroup>
-
 </Project>
