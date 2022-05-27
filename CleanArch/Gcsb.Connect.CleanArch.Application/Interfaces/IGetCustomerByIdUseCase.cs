@@ -8,6 +8,6 @@ namespace Gcsb.Connect.CleanArch.Application.Interfaces
 {
     public interface IGetCustomerByIdUseCase
     {
-        void Execute(Guid Id);
+        void Execute(Guid id);
     }
 }

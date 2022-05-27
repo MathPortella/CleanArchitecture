@@ -2,6 +2,6 @@
 {
     public class RemoveCustomerResponse
     {
-        public string Message { get; set; }
+        public Guid Id { get; private set; }
     }
 }
